@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agenda de Contatos</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Agenda de Contatos</h1>
+  <table id="contact-table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+      </tr>
+    </thead>
+    <tbody id="contact-list">
+      <!-- Contatos serão adicionados aqui -->
+    </tbody>
+  </table>
+  <form id="contact-form">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="phone">Telefone:</label>
+    <input type="tel" id="phone" name="phone"><br><br>
+    <input type="submit" value="Cadastrar">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
